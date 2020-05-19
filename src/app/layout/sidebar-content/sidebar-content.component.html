@@ -1,1 +1,19 @@
-<p>sidebar!</p>
+<nav id="sidebar">
+  <div class="sidebar-header text">
+      <h3><u>Plan de cuidado</u></h3>
+      <div class="borde">
+        <img class="img-fluid borde"  src="assets/img/avatar.jpg" alt="fdgfd">
+      </div>
+  </div>
+  <ul class="list-unstyled components">
+    <li routerLinkActive="active">
+      <img height="32" width="32" src="@/bootstrap-icons/icons/alarm.svg"/>
+        <a [routerLink]="['/']" >Home</a>
+    </li>
+  </ul>
+  <ul class="list-unstyled components">
+    <li routerLinkActive="active">
+        <a [routerLink]="['/paciente']">Home</a>
+    </li>
+  </ul>
+</nav>

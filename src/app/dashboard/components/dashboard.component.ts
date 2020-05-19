@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
   carts1 = [
     {'number': 15 ,'descrition': 'ejemplo', 'class':'success'},
     {'number': 50 ,'descrition': 'ejemplo', 'class':'warning'},
@@ -18,9 +20,13 @@ export class DashboardComponent implements OnInit {
     {'number': 21 ,'title': 'ejemplo', 'class':'success','codigo':'OI', 'icon':''},
     {'number': 60 ,'title': 'ejemplo', 'class':'warning','codigo':'CI', 'icon':''}
   ];
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+
   }
+
 
 }

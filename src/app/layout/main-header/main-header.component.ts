@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-main-header',
@@ -10,6 +12,12 @@ export class MainHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  sidebarCollapse(){
+    $('#sidebar').toggleClass('active');
+
   }
 
 }
