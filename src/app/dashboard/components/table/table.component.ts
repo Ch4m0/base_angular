@@ -26,6 +26,11 @@ export class TableComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
   }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
 
 export interface PeriodicElement {
@@ -50,5 +55,48 @@ const ELEMENT_DATA: PeriodicElement[] = [
     sintomas: 'Subión tensión, se cayo en la moto',
     edad: 29,
     eps: 'Medimas'
+  },
+  {
+    id: 3,
+    nombreCompleto: 'Abner Chamorro Diaz',
+    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
+    edad: 27,
+    eps: 'Sura'
+  },
+  {
+    id: 4,
+    nombreCompleto: 'Simon Castañeda Fierro',
+    sintomas: 'Subión tensión, se cayo en la moto',
+    edad: 29,
+    eps: 'Medimas'
+  },
+  {
+    id: 5,
+    nombreCompleto: 'Abner Chamorro Diaz',
+    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
+    edad: 27,
+    eps: 'Sura'
+  },
+  {
+    id: 6,
+    nombreCompleto: 'Simon Castañeda Fierro',
+    sintomas: 'Subión tensión, se cayo en la moto',
+    edad: 29,
+    eps: 'Medimas'
+  },
+  {
+    id: 7,
+    nombreCompleto: 'Abner Chamorro Diaz',
+    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
+    edad: 27,
+    eps: 'Sura'
+  },
+  {
+    id: 8,
+    nombreCompleto: 'Simon Castañeda Fierro',
+    sintomas: 'Subión tensión, se cayo en la moto',
+    edad: 29,
+    eps: 'Medimas'
   }
+
 ];
