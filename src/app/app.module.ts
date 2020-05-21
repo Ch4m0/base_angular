@@ -1,4 +1,3 @@
-// import { MaterialModule } from './material.module';
 import { MatSliderModule } from '@angular/material/slider';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule
-    // MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,7 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatTableModule } from '@angular/material/table';
-import { MatIconModule } from '@angular/material/icon';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MaterialModule } from '../material/material.module';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './components/dashboard.component';
@@ -17,13 +15,6 @@ import { TableComponent } from './components/table/table.component';
     ShowListPatientsComponent,
     TableComponent
   ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule,
-    MatTableModule,
-    MatIconModule,
-    MatPaginatorModule
-  ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  imports: [CommonModule, DashboardRoutingModule, MaterialModule]
 })
 export class DashboardModule {}

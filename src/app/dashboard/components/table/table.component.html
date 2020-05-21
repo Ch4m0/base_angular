@@ -1,12 +1,10 @@
 <div class="mat-elevation-z8">
-
   <mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
+    <mat-label>Buscar paciente</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" />
   </mat-form-field>
 
   <table mat-table [dataSource]="dataSource">
-
     <!-- Position Column -->
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef>No.</th>
@@ -54,6 +52,4 @@
     [pageSizeOptions]="[5, 10, 20]"
     showFirstLastButtons
   ></mat-paginator>
-
-
 </div>
