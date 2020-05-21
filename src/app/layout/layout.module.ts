@@ -7,7 +7,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
 
-import { MatIconModule } from '@angular/material/icon';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +16,6 @@ import { MatIconModule } from '@angular/material/icon';
     MainContentComponent,
     SidebarContentComponent
   ],
-  imports: [CommonModule, LayoutRoutingModule, MatIconModule]
+  imports: [CommonModule, LayoutRoutingModule, MaterialModule]
 })
 export class LayoutModule {}

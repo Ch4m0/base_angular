@@ -1,3 +1,6 @@
+// import { MaterialModule } from './material.module';
+import { MatSliderModule } from '@angular/material/slider';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +10,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule
+    // MaterialModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
