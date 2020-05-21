@@ -1,0 +1,18 @@
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "name": "Abner Chamorro Diaz",
+      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
+      "edad": 27,
+      "Eps": "Sura"
+    },
+    {
+      "id": 2,
+      "name": "Simon Castañeda Fierro",
+      "sintomas": "Subión tensión, se cayo en la moto",
+      "edad": 29,
+      "Eps": "Medimas"
+    }
+  ]
+}
