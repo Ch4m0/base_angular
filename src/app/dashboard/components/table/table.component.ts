@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { DashboardService } from '../../dashboard.service';
 
 /**
  * @title Table with pagination
@@ -19,12 +20,19 @@ export class TableComponent implements OnInit {
     'eps',
     'accion'
   ];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+
+  dataSource = new MatTableDataSource();
+
+  constructor(private dashboard: DashboardService) {}
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
+
+    this.dashboard.getPatients().subscribe((data: any[]) => {
+      this.dataSource.data = data;
+    });
   }
 
   applyFilter(event: Event) {
@@ -33,70 +41,10 @@ export class TableComponent implements OnInit {
   }
 }
 
-export interface PeriodicElement {
+export interface Patient {
   id: number;
   nombreCompleto: string;
   sintomas: string;
   edad: number;
   eps: string;
 }
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    id: 1,
-    nombreCompleto: 'Abner Chamorro Diaz',
-    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
-    edad: 27,
-    eps: 'Sura'
-  },
-  {
-    id: 2,
-    nombreCompleto: 'Simon Castañeda Fierro',
-    sintomas: 'Subión tensión, se cayo en la moto',
-    edad: 29,
-    eps: 'Medimas'
-  },
-  {
-    id: 3,
-    nombreCompleto: 'Abner Chamorro Diaz',
-    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
-    edad: 27,
-    eps: 'Sura'
-  },
-  {
-    id: 4,
-    nombreCompleto: 'Simon Castañeda Fierro',
-    sintomas: 'Subión tensión, se cayo en la moto',
-    edad: 29,
-    eps: 'Medimas'
-  },
-  {
-    id: 5,
-    nombreCompleto: 'Abner Chamorro Diaz',
-    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
-    edad: 27,
-    eps: 'Sura'
-  },
-  {
-    id: 6,
-    nombreCompleto: 'Simon Castañeda Fierro',
-    sintomas: 'Subión tensión, se cayo en la moto',
-    edad: 29,
-    eps: 'Medimas'
-  },
-  {
-    id: 7,
-    nombreCompleto: 'Abner Chamorro Diaz',
-    sintomas: 'Esta mareado, vino borracho, tiene dolor de cabeza',
-    edad: 27,
-    eps: 'Sura'
-  },
-  {
-    id: 8,
-    nombreCompleto: 'Simon Castañeda Fierro',
-    sintomas: 'Subión tensión, se cayo en la moto',
-    edad: 29,
-    eps: 'Medimas'
-  }
-
-];
