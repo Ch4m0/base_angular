@@ -7,13 +7,15 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './components/dashboard.component';
 import { ShowListPatientsComponent } from './pages/showListPatients/show-list-patients.component';
 import { TableComponent } from './components/table/table.component';
+import { CreatePatientsComponent } from './pages/create-patients/create-patients.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     DashboardComponent,
     ShowListPatientsComponent,
-    TableComponent
+    TableComponent,
+    CreatePatientsComponent
   ],
   imports: [CommonModule, DashboardRoutingModule, MaterialModule]
 })

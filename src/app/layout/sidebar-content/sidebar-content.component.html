@@ -1,13 +1,15 @@
 <nav id="sidebar">
   <div class="sidebar-header text">
-    <h3><u>Plan de cuidado</u></h3>
+    <h3><u>
+      <a [routerLink]="['/']">Plan de cuidado</a>
+      </u></h3>
     <div class="box-avatar">
       <img class="img-fluid borde" src="assets/img/avatar.jpg" alt="fdgfd" />
     </div>
   </div>
   <ul class="list-unstyled components">
     <li routerLinkActive="active">
-      <a [routerLink]="['/']">Lista de pacientes</a>
+      <a [routerLink]="['/lista-pacientes']">Lista de pacientes</a>
     </li>
   </ul>
   <ul class="list-unstyled components">
