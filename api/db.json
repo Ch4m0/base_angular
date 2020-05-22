@@ -55,6 +55,17 @@
       "sintomas": "Subión tensión, se cayo en la moto",
       "edad": 29,
       "eps": "Medimas"
+    },
+    {
+      "id": 12,
+      "nombreCompleto": "N,N,MN,MN JKHLJK",
+      "sintomas": [
+        "Fiebre",
+        "malestar general",
+        "nauceas"
+      ],
+      "edad": 15,
+      "eps": "JHKHKLJ"
     }
   ]
 }

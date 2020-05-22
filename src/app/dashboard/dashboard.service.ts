@@ -13,4 +13,8 @@ export class DashboardService {
   public getPatients() {
     return this.httpClient.get(`${this.REST_API_SERVER}/pacientes`);
   }
+
+  public postPatients(data:any) {
+    return this.httpClient.post(`${this.REST_API_SERVER}/pacientes`, data);
+  }
 }

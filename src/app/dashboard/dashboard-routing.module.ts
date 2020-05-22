@@ -4,13 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard.component';
 
 import { ShowListPatientsComponent } from './pages/showListPatients/show-list-patients.component';
-
+import { CreatePatientsComponent } from './pages/create-patients/create-patients.component';
 const routes: Routes = [
   { path: '', component: DashboardComponent },
-  {
-    path: 'lista-pacientes',
-    component: ShowListPatientsComponent
-  }
+  { path: 'lista-pacientes', component: ShowListPatientsComponent },
+  { path: 'crear-pacientes', component: CreatePatientsComponent }
+
 ];
 
 @NgModule({
