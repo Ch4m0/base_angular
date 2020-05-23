@@ -13,8 +13,14 @@ export class DashboardService {
   public getPatients() {
     return this.httpClient.get(`${this.REST_API_SERVER}/pacientes`);
   }
-
+/*Post cerate patients*/
   public postPatients(data:any) {
     return this.httpClient.post(`${this.REST_API_SERVER}/pacientes`, data);
+  }
+
+  /*delete patients*/
+
+  public deletePatients(id:any) {
+    return this.httpClient.delete(`${this.REST_API_SERVER}/pacientes/`+ id);
   }
 }

@@ -1,71 +1,32 @@
 {
   "pacientes": [
     {
-      "id": 1,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
+      "nombreCompleto": "DDDD",
+      "sintomas": "DDDDD",
+      "edad": 10,
+      "eps": "EPS",
+      "id": 4
     },
     {
-      "id": 2,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
+      "nombreCompleto": "QWW",
+      "sintomas": "WQQWWQ",
+      "edad": 231,
+      "eps": "QW",
+      "id": 5
     },
     {
-      "id": 3,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
+      "nombreCompleto": "cvbvb",
+      "sintomas": "cvbvb",
+      "edad": 12,
+      "eps": "sfsd",
+      "id": 6
     },
     {
-      "id": 4,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
-    },
-    {
-      "id": 5,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
-    },
-    {
-      "id": 6,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
-    },
-    {
-      "id": 7,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
-    },
-    {
-      "id": 8,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
-    },
-    {
-      "id": 12,
-      "nombreCompleto": "N,N,MN,MN JKHLJK",
-      "sintomas": [
-        "Fiebre",
-        "malestar general",
-        "nauceas"
-      ],
-      "edad": 15,
-      "eps": "JHKHKLJ"
+      "nombreCompleto": "xcvcx",
+      "sintomas": "xcvxcv",
+      "edad": 21231,
+      "eps": "kjhklhj",
+      "id": 7
     }
   ]
 }

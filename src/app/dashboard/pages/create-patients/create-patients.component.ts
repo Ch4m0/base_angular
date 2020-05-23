@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../dashboard.service';
+import { Patient } from './patient';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-create-patients',
@@ -8,32 +10,27 @@ import { DashboardService } from '../../dashboard.service';
 })
 export class CreatePatientsComponent implements OnInit {
 
-    id: number;
-    nombre: string;
-    apellido: string;
-    sintomas: string;
-    edad: number;
-    eps: string;
-   toppingList: string[] = ['Fiebre', 'dolor de cabeza', 'malestar general', 'nauceas', 'perdida de peso', 'sangrado'];
-  constructor(private dashboard: DashboardService) { }
+  public patient : Patient;
+
+
+  constructor(private dashboard: DashboardService,private route: ActivatedRoute,
+    private router: Router) {
+    this.patient = new Patient();
+
+   }
 
   ngOnInit(): void {
   }
   guardar(){
-    var nombre= this.nombre+' '+this.apellido;
-    var data = {
-      'id' : this.id,
-      'nombreCompleto': nombre,
-      'sintomas': this.sintomas,
-      'edad': this.edad,
-      'eps': this.eps
-    }
-    console.log("sdsd");
+
+    var data = this.patient;
+    const vm = this;
    this.dashboard.postPatients(data).subscribe({
     next(position) {
-      console.log('Current Position: ', position);
+      vm.router.navigate(['/lista-pacientes']);
     },
     error(msg) {
+      alert();
       console.log('Error Getting Location: ', msg);
     }
   }
