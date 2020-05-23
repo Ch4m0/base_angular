@@ -2,10 +2,10 @@
   "pacientes": [
     {
       "id": 1,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
+      "nombreCompleto": "Abner Antonio Chamorro Diaz modifcado",
+      "sintomas": "ciergo",
       "edad": 27,
-      "eps": "Sura"
+      "eps": "EPS Sura"
     },
     {
       "id": 2,

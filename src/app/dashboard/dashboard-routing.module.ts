@@ -4,12 +4,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard.component';
 
 import { ShowListPatientsComponent } from './pages/showListPatients/show-list-patients.component';
+import { EditPatientComponent } from './pages/edit-patient/edit-patient.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   {
     path: 'lista-pacientes',
     component: ShowListPatientsComponent
+  },
+  {
+    path: 'editar-paciente/:id',
+    component: EditPatientComponent
   }
 ];
 
