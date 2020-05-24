@@ -9,6 +9,8 @@ import { DashboardComponent } from './components/dashboard.component';
 import { ShowListPatientsComponent } from './pages/showListPatients/show-list-patients.component';
 import { TableComponent } from './components/table/table.component';
 import { CreatePatientsComponent } from './pages/create-patients/create-patients.component';
+import { EditPatientComponent } from './pages/edit-patient/edit-patient.component';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import { CreatePatientsComponent } from './pages/create-patients/create-patients
     DashboardComponent,
     ShowListPatientsComponent,
     TableComponent,
-    CreatePatientsComponent
+    CreatePatientsComponent,
+    EditPatientComponent
   ],
-  imports: [CommonModule, DashboardRoutingModule, MaterialModule, FormsModule]
+    imports: [CommonModule, DashboardRoutingModule, FormsModule, MaterialModule,]
 })
 export class DashboardModule {}

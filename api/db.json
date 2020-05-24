@@ -1,32 +1,21 @@
 {
   "pacientes": [
     {
-      "nombreCompleto": "DDDD",
-      "sintomas": "DDDDD",
-      "edad": 10,
-      "eps": "EPS",
-      "id": 4
+      "nombreCompleto": "prueba",
+      "sintomas": "sintomas",
+      "edad": 25,
+      "eps": "compensar",
+      "id": 1
     },
     {
-      "nombreCompleto": "QWW",
-      "sintomas": "WQQWWQ",
-      "edad": 231,
-      "eps": "QW",
-      "id": 5
+      "nombreCompleto": "simon",
+      "edad": 22,
+      "eps": "Sanitas",
+      "sintomas": "sintomar nada",
+      "id": 2
     },
     {
-      "nombreCompleto": "cvbvb",
-      "sintomas": "cvbvb",
-      "edad": 12,
-      "eps": "sfsd",
-      "id": 6
-    },
-    {
-      "nombreCompleto": "xcvcx",
-      "sintomas": "xcvxcv",
-      "edad": 21231,
-      "eps": "kjhklhj",
-      "id": 7
+      "id": 3
     }
   ]
 }

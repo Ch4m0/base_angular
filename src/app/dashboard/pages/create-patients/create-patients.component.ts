@@ -11,7 +11,18 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class CreatePatientsComponent implements OnInit {
 
   public patient : Patient;
+  listAge: Array<number> = [...Array(200).keys()];
 
+  listEps: Array<string> = [
+    'EPS Sura',
+    'Aliansalud',
+    'Sanitas',
+    'Compensar EPS',
+    'Salud Total',
+    'Nueva EPS',
+    'Coomeva EPS',
+    'Famisanar'
+  ];
 
   constructor(private dashboard: DashboardService,private route: ActivatedRoute,
     private router: Router) {
