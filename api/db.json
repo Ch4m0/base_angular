@@ -11,10 +11,14 @@
       "nombreCompleto": "simon",
       "edad": 22,
       "eps": "Sanitas",
-      "sintomas": "sintomar nada",
+      "sintomas": "Sin tomar nada, loco loco",
       "id": 2
     },
     {
+      "nombreCompleto": "Andres",
+      "edad": 26,
+      "eps": "Compensar EPS",
+      "sintomas": "sintomas 1",
       "id": 3
     }
   ]
