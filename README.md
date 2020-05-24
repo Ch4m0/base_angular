@@ -1,3 +1,11 @@
+# Desplegar proyecto
+- Clonar proyecto
+- Ingresar al directorio del proyecto y ejecutar npm install
+- Ejecutar npm install -g json-server
+- Desde el direstorio del proyecto ir a ./api
+- Ejecutar json-server --watch db.json.
+ 
+
 # AngularProbe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.

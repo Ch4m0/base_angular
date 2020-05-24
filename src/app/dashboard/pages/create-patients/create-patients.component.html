@@ -1,0 +1,59 @@
+  <section id="form-patient">
+    <mat-card class="card">
+      <h3>Datos del paciente</h3>
+
+      <form class="example-form" (ngSubmit)="guardar()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre completo</mat-label>
+          <input
+            matInput
+            placeholder="Aquí va el nombre completo"
+            [(ngModel)]="patient.nombreCompleto"
+            name="nombreCompleto"
+          />
+        </mat-form-field>
+
+        <div class="group-fields">
+          <mat-form-field>
+            <mat-label>Edad</mat-label>
+            <mat-select [(ngModel)]="patient.edad" name="edad">
+              <mat-option *ngFor="let edad of listAge" [value]="edad">
+                {{ edad }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Eps</mat-label>
+            <mat-select [(ngModel)]="patient.eps" name="eps">
+              <mat-option *ngFor="let eps of listEps" [value]="eps">
+                {{ eps }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Sintomas</mat-label>
+          <textarea
+            matInput
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="4"
+            cdkAutosizeMaxRows="5"
+            placeholder="Aquí colocas los sintomas del paciente"
+            [(ngModel)]="patient.sintomas"
+            name="sintomas"
+          ></textarea>
+        </mat-form-field>
+
+        <div class="box-button">
+          <button mat-raised-button color="primary">Guardar información</button>
+        </div>
+      </form>
+    </mat-card>
+  </section>
+
+
+
+

@@ -42,7 +42,9 @@
         <mat-icon [routerLink]="['/editar-paciente', element.id]"
           >edit</mat-icon
         >
-        <mat-icon>delete_outline</mat-icon>
+        <mat-icon (click)="delete(element.id)">delete_outline</mat-icon>
+
+
       </td>
     </ng-container>
 
@@ -54,4 +56,6 @@
     [pageSizeOptions]="[5, 10, 20]"
     showFirstLastButtons
   ></mat-paginator>
+
+
 </div>

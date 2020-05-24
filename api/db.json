@@ -1,60 +1,21 @@
 {
   "pacientes": [
     {
-      "id": 1,
-      "nombreCompleto": "Abner Antonio Chamorro Diaz modifcado",
-      "sintomas": "ciergo",
-      "edad": 27,
-      "eps": "EPS Sura"
+      "nombreCompleto": "prueba",
+      "sintomas": "sintomas",
+      "edad": 25,
+      "eps": "compensar",
+      "id": 1
     },
     {
-      "id": 2,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
+      "nombreCompleto": "simon",
+      "edad": 22,
+      "eps": "Sanitas",
+      "sintomas": "sintomar nada",
+      "id": 2
     },
     {
-      "id": 3,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
-    },
-    {
-      "id": 4,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
-    },
-    {
-      "id": 5,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
-    },
-    {
-      "id": 6,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
-    },
-    {
-      "id": 7,
-      "nombreCompleto": "Abner Chamorro Diaz",
-      "sintomas": "Esta mareado, vino borracho, tiene dolor de cabeza",
-      "edad": 27,
-      "eps": "Sura"
-    },
-    {
-      "id": 8,
-      "nombreCompleto": "Simon Castañeda Fierro",
-      "sintomas": "Subión tensión, se cayo en la moto",
-      "edad": 29,
-      "eps": "Medimas"
+      "id": 3
     }
   ]
 }
