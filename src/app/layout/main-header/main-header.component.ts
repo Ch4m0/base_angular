@@ -8,16 +8,11 @@ declare var $: any;
   styleUrls: ['./main-header.component.scss']
 })
 export class MainHeaderComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-
-  }
-
-  sidebarCollapse(){
+  sidebarCollapse() {
     $('#sidebar').toggleClass('active');
-
   }
-
 }
