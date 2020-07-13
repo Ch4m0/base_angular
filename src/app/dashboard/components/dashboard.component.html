@@ -1,94 +1,15 @@
-<div class="container-fluid">
-  <div class="row  paciente">
-    <div class="col-lg-4 " *ngFor="let cart of carts1; let i = index">
-      <div class="card-body card">
-        <div class="col-sm-12">
-          <h3 class="card-title">
-            Paciente {{ i + 1 }}
-            <div class="bg-{{ cart.class }} number center">
-              <samp class="text-white">{{ cart.number }}</samp>
-            </div>
-          </h3>
-          <p class="card-text sub">{{ cart.descrition }}</p>
-        </div>
-      </div>
+<section class="container container-sm container-md">
+  <div class="row section-info-base">
+    <div class="info-base">1</div>
+    <div class="info-aditional">2</div>
+    <div class=" medical-evaluations">
+      3
     </div>
+    <div class=" diagnostics">
+      4
+    </div>
+    <div class="recients-activities">5</div>
+    <div class="care-plans">6</div>
+    <div class="todos">7</div>
   </div>
-
-  <div class="row  datos">
-    <div
-      class="col-lg-4 col-md-4 col-sm-6"
-      *ngFor="let cart of carts2; let i = index"
-    >
-      <div class="card-body">
-        <div class="row ">
-          <div class="col-sm bg-{{ cart.class }} center">
-            <span class="codigo">{{ cart.codigo }}</span>
-          </div>
-          <div class="col-sm card">
-            <h3 class="sub far fa-address-book">{{ cart.title }}</h3>
-            <h1 class="sub">{{ cart.number }}</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row tables">
-    <div class="col-6 ">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tasks</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="custom-control custom-checkbox mb-3">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="customCheck"
-                  name="example1"
-                />
-                <label class="custom-control-label" for="customCheck"
-                  >Custom checkbox</label
-                >
-              </div>
-            </td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-6">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tasks</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="custom-control custom-checkbox mb-3">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="customCheck"
-                  name="example1"
-                />
-                <label class="custom-control-label" for="customCheck"
-                  >Custom checkbox</label
-                >
-              </div>
-            </td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+</section>

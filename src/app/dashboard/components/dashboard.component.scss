@@ -1,44 +1,28 @@
-.container-fluid{
+$color_info_base: #fff7eb;
+$color_info_aditional: #caf7f1;
+$color_medical_evaluations: #f4f6f9;
+
+.container {
   height: 85%;
-  margin: 1%;
-  width: 98%;
   background-color: #edf0f5;
-}
-.center{text-align: center;}
-.sub{  color: #a4a4a4; margin-top: 15px;}
-.number{
-  border-radius: 5px;
-  float: right;
-  width: 50px;
-  height: 50px;
+  padding-left: 80px;
 
-}
-.datos{  margin-top: 20px;}
-.pad{  padding: 0px;}
-.codigo{
-  font-size: 90px;
-  opacity: 0.3;
-}
-tbody{
-  background-color: white;
-}
-.tables{
-  margin-top: 20px;
+  .section-info-base {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
 
+    .info-base {
+      margin-right: -16px;
+      background-color: $color_info_base;
+    }
+
+    .info-aditional {
+      background-color: $color_info_aditional;
+      margin-right: -26px;
+    }
+
+    .medical-evaluations {
+      background-color: $color_medical_evaluations;
+    }
+  }
 }
-.table{
-  border: solid 1px grey;
-}
-
-input.custom-control-input {
-  width: 40px;
-  height: 40px;
-}
-
-input.custom-control {
-  width: 40px;
-  height: 40px;
-}
-
-
-
