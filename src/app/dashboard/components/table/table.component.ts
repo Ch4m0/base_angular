@@ -28,17 +28,32 @@ export class TableComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
   ngOnInit() {
-    this.dataSource.paginator = this.paginator;
+    this.list()
+  }
 
+  list(){
+    this.dataSource.paginator = this.paginator;
     this.dashboard.getPatients().subscribe((data: any[]) => {
       this.dataSource.data = data;
     });
   }
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+
+  delete(data:number){
+    var vm= this;
+     this.dashboard.deletePatients(data).subscribe({
+      next(position) {
+        vm.list();
+      },
+      error(msg) {
+        alert();
+        console.log('Error Getting Location: ', msg);
+      }
+  });
+}
 }
 
 export interface Patient {
